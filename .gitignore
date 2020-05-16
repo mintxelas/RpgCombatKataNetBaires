@@ -1,0 +1,19 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/**
+/bin/**
+/obj/**
+/Kata/bin/Debug/netcoreapp3.1
+/Kata/obj
+/Kata.Api/bin/Debug/netcoreapp3.1
+/Kata.Api/obj
+/Kata.Application/bin/Debug/netstandard2.0
+/Kata.Application/obj
+/Kata.Application.Tests/bin/Debug/netcoreapp3.1
+/Kata.Application.Tests/obj
+/Kata.Domain/bin/Debug/netstandard2.0
+/Kata.Domain/obj
+/Kata.Domain.Tests/bin/Debug/netcoreapp3.1
+/Kata.Domain.Tests/obj
