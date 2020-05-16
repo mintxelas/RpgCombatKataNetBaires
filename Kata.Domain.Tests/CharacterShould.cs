@@ -4,18 +4,29 @@ namespace Kata.Domain.Tests
 {
     public class CharacterShould
     {
+        private Character character;
+
+        public CharacterShould()
+        {
+            character = new Character();
+        }
+
         [Fact]
         public void BeCreatedWith1000Health()
         {
-            var character= new Character();
             Assert.Equal(1000, character.Health);
         }
 
         [Fact]
         public void BeCreatedWithLevel1()
         {
-            var character = new Character();
             Assert.Equal(1, character.Level);
+        }
+
+        [Fact]
+        public void BeAliveWhenCreated()
+        {
+            Assert.True(character.IsALive());
         }
     }
 }

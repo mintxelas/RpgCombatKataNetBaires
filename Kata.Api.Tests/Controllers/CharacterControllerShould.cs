@@ -14,7 +14,9 @@ namespace Kata.Api.Tests.Controllers
             var service = Substitute.For<ICharacterService>();
             service.CreateCharacter().Returns(new Character());
             var controller = new CharacterController(service);
+
             var character = controller.Post();
+
             Assert.NotNull(character);
             service.Received().CreateCharacter();
         }

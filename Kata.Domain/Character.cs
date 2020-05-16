@@ -10,5 +10,10 @@
             Health = 1000;
             Level = 1;
         }
+
+        public bool IsALive()
+        {
+            return Health > 0;
+        }
     }
 }
