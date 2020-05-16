@@ -3,17 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata.Api.Tests", "Kata\Kata.Api.Tests.csproj", "{A00B7D80-B808-4440-AF6C-35608EDBB731}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kata.Application", "Kata.Application\Kata.Application.csproj", "{905F8A27-7E95-415D-AE7D-98A9CC84A32F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata.Api", "Kata.Api\Kata.Api.csproj", "{1D47CA2F-817C-4470-8982-16A9103AB7B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kata.Domain", "Kata.Domain\Kata.Domain.csproj", "{FC002252-9AE1-465C-9318-8B76806B09DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata.Application", "Kata.Application\Kata.Application.csproj", "{905F8A27-7E95-415D-AE7D-98A9CC84A32F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kata.Application.Tests", "Kata.Application.Tests\Kata.Application.Tests.csproj", "{B63304E6-ECDE-4F50-9E86-AF6350F19633}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata.Domain", "Kata.Domain\Kata.Domain.csproj", "{FC002252-9AE1-465C-9318-8B76806B09DA}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata.Application.Tests", "Kata.Application.Tests\Kata.Application.Tests.csproj", "{B63304E6-ECDE-4F50-9E86-AF6350F19633}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata.Domain.Tests", "Kata.Domain.Tests\Kata.Domain.Tests.csproj", "{4E8C4845-DA88-4B5F-AB76-92C7BD7FD5B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kata.Domain.Tests", "Kata.Domain.Tests\Kata.Domain.Tests.csproj", "{4E8C4845-DA88-4B5F-AB76-92C7BD7FD5B5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{326696FB-6F9B-4DC7-B545-EFA5B66B23DB}"
 EndProject
@@ -21,20 +17,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{3D292196-86F2-4408-8EC6-3F44202D9BEB}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kata.Api", "Kata.Api\Kata.Api.csproj", "{FFFA70A8-6D7B-4BF3-A045-A301CC6EBFE5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kata.Api.Tests", "Kata.Api.Tests\Kata.Api.Tests.csproj", "{FBA37E4B-BB22-420D-912B-24F11BC13C01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A00B7D80-B808-4440-AF6C-35608EDBB731}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A00B7D80-B808-4440-AF6C-35608EDBB731}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A00B7D80-B808-4440-AF6C-35608EDBB731}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A00B7D80-B808-4440-AF6C-35608EDBB731}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1D47CA2F-817C-4470-8982-16A9103AB7B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1D47CA2F-817C-4470-8982-16A9103AB7B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1D47CA2F-817C-4470-8982-16A9103AB7B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1D47CA2F-817C-4470-8982-16A9103AB7B3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{905F8A27-7E95-415D-AE7D-98A9CC84A32F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{905F8A27-7E95-415D-AE7D-98A9CC84A32F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{905F8A27-7E95-415D-AE7D-98A9CC84A32F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,17 +43,25 @@ Global
 		{4E8C4845-DA88-4B5F-AB76-92C7BD7FD5B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E8C4845-DA88-4B5F-AB76-92C7BD7FD5B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E8C4845-DA88-4B5F-AB76-92C7BD7FD5B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFFA70A8-6D7B-4BF3-A045-A301CC6EBFE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFFA70A8-6D7B-4BF3-A045-A301CC6EBFE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFFA70A8-6D7B-4BF3-A045-A301CC6EBFE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFFA70A8-6D7B-4BF3-A045-A301CC6EBFE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBA37E4B-BB22-420D-912B-24F11BC13C01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBA37E4B-BB22-420D-912B-24F11BC13C01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBA37E4B-BB22-420D-912B-24F11BC13C01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBA37E4B-BB22-420D-912B-24F11BC13C01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A00B7D80-B808-4440-AF6C-35608EDBB731} = {326696FB-6F9B-4DC7-B545-EFA5B66B23DB}
-		{1D47CA2F-817C-4470-8982-16A9103AB7B3} = {326696FB-6F9B-4DC7-B545-EFA5B66B23DB}
 		{905F8A27-7E95-415D-AE7D-98A9CC84A32F} = {4F49BEC9-E891-4BA9-9EE6-4B18DC6809B5}
 		{FC002252-9AE1-465C-9318-8B76806B09DA} = {3D292196-86F2-4408-8EC6-3F44202D9BEB}
 		{B63304E6-ECDE-4F50-9E86-AF6350F19633} = {4F49BEC9-E891-4BA9-9EE6-4B18DC6809B5}
 		{4E8C4845-DA88-4B5F-AB76-92C7BD7FD5B5} = {3D292196-86F2-4408-8EC6-3F44202D9BEB}
+		{FFFA70A8-6D7B-4BF3-A045-A301CC6EBFE5} = {326696FB-6F9B-4DC7-B545-EFA5B66B23DB}
+		{FBA37E4B-BB22-420D-912B-24F11BC13C01} = {326696FB-6F9B-4DC7-B545-EFA5B66B23DB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DD024403-CB16-491D-BCCA-676C29FA7AEC}

@@ -17,3 +17,5 @@
 /Kata.Domain/obj
 /Kata.Domain.Tests/bin/Debug/netcoreapp3.1
 /Kata.Domain.Tests/obj
+/Kata.Api.Tests/bin/Debug/netcoreapp3.1
+/Kata.Api.Tests/obj
