@@ -1,0 +1,9 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b513c35f_002D8c28_002D4a94_002Da8b4_002D381fafe245f8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CreateACharacterWith1000Health #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c5b38da1_002D8c35_002D41c6_002D9e0f_002Df79b4df14bd8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CreateACharacterWith1000Health" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::FBA37E4B-BB22-420D-912B-24F11BC13C01::.NETCoreApp,Version=v3.1::Kata.KataApiShould.CreateACharacterWith1000Health&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
