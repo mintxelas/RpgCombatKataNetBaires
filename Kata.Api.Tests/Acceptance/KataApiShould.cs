@@ -47,10 +47,21 @@ namespace Kata
         [Fact]
         public void DamageACharacter()
         {
-            var character = new Character("123", 1234, 5);
+            var character = new Character("123", 123, 5);
             repository.GetCharacter("123").Returns(character);
 
             var result = controller.PutDamage(character.Id, 10);
+
+            Assert.True(result);
+        }
+
+        [Fact]
+        public void HealACharacter()
+        {
+            var character = new Character("123", 123, 4);
+            repository.GetCharacter("123").Returns(character);
+
+            bool result = controller.PutHealing(character.Id, 10);
 
             Assert.True(result);
         }

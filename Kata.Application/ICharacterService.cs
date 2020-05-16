@@ -6,5 +6,6 @@ namespace Kata.Application
     {
         Character CreateCharacter();
         bool DamageCharacter(string id, int amount);
+        bool HealCharacter(string id, int amount);
     }
 }

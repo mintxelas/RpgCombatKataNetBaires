@@ -38,5 +38,16 @@ namespace Kata.Api.Tests.Controllers
             Assert.True(result);
             service.Received().DamageCharacter(Arg.Is<string>(s => s == "123"), Arg.Is<int>(i => i == 10));
         }
+
+        [Fact]
+        public void RelayToServiceTheHealingOfExistingCharacter()
+        {
+            service.HealCharacter(Arg.Any<string>(), Arg.Any<int>()).Returns(true);
+            
+            var result = controller.PutHealing("123", 10); 
+            
+            Assert.True(result);
+            service.Received().HealCharacter(Arg.Is<string>(s => s == "123"), Arg.Is<int>(i => i == 10));
+        }
     }
 }

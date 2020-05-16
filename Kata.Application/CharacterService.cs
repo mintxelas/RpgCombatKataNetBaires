@@ -23,5 +23,13 @@ namespace Kata.Application
             repository.SaveCharacter(character);
             return true;
         }
+
+        public bool HealCharacter(string id, int amount)
+        {
+            var character = repository.GetCharacter(id);
+            character.Heal(amount);
+            repository.SaveCharacter(character);
+            return true;
+        }
     }
 }

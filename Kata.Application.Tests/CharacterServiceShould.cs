@@ -36,5 +36,16 @@ namespace Kata.Application.Tests
             existingCharacter.Received().Damage(Arg.Is<int>(i => i == 10));
             repository.Received().SaveCharacter(Arg.Is<Character>(ch => ch.Id == "123"));
         }
+
+        [Fact]
+        public void HealCharacterFromRepository()
+        {
+            var existingCharacter = Substitute.For<Character>("123", 123, 123);
+            repository.GetCharacter(Arg.Any<string>()).Returns(existingCharacter);
+            var result = service.HealCharacter("123", 10);
+            repository.Received().GetCharacter("123");
+            existingCharacter.Received().Heal(Arg.Is<int>(i => i == 10));
+            repository.Received().SaveCharacter(Arg.Is<Character>(ch => ch.Id == "123"));
+        }
     }
 }

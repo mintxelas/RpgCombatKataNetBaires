@@ -22,10 +22,16 @@ namespace Kata.Api.Controllers
             return service.CreateCharacter();
         }
 
-        [HttpPut("damage")]
-        public bool PutDamage(string id, int amount)
+        [HttpPut("damage/{characterId}")]
+        public bool PutDamage([FromRoute]string characterId, [FromBody]int amount)
         {
-            return service.DamageCharacter(id, amount);
+            return service.DamageCharacter(characterId, amount);
+        }
+
+        [HttpPut("heal/{characterId}")]
+        public bool PutHealing([FromRoute]string characterId, [FromBody]int amount)
+        {
+            return service.HealCharacter(characterId, amount);
         }
     }
 }

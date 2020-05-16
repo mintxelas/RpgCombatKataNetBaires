@@ -42,10 +42,21 @@ namespace Kata.Domain.Tests
         [InlineData(100, 100, 0)]
         [InlineData(100, 200, 0)]
         [InlineData(200, 100, 100)]
-        public void ReduceHealthWhenDamagedWithAMinumumOfZero(int startinghealth, int receivedDamage, int finalHealth)
+        public void ReduceHealthWhenDamagedWithAMinumumOfZero(int startingHealth, int receivedDamage, int finalHealth)
         {
-            var c = new Character("123", startinghealth, 1);
+            var c = new Character("123", startingHealth, 1);
             c.Damage(receivedDamage);
+            Assert.Equal(finalHealth, c.Health);
+        }
+
+        [Theory]
+        [InlineData(100, 100, 200)]
+        [InlineData(0, 100, 0)]
+        [InlineData(1000, 100, 1000)]
+        public void IncreaseHealthUpTo1000UnlessCharacterIsDead(int startingHealth, int receivedHealing, int finalHealth)
+        {
+            var c = new Character("123", startingHealth, 1);
+            c.Heal(receivedHealing);
             Assert.Equal(finalHealth, c.Health);
         }
     }

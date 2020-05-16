@@ -31,5 +31,11 @@ namespace Kata.Domain
         {
             Health = Math.Max(0, Health - amount);
         }
+
+        public virtual void Heal(int amount)
+        {
+            if (!IsALive()) return;
+            Health = Math.Min(1000, Health + amount);
+        }
     }
 }
