@@ -16,9 +16,16 @@ namespace Kata.Api.Controllers
             this.service = service;
         }
 
+        [HttpPost]
         public Character Post()
         {
             return service.CreateCharacter();
+        }
+
+        [HttpPut("damage")]
+        public bool PutDamage(string id, int amount)
+        {
+            return service.DamageCharacter(id, amount);
         }
     }
 }

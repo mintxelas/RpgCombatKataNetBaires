@@ -15,5 +15,13 @@ namespace Kata.Application
         {
             return repository.CreateCharacter();
         }
+
+        public bool DamageCharacter(string id, int amount)
+        {
+            var character = repository.GetCharacter(id);
+            character.Damage(amount);
+            repository.SaveCharacter(character);
+            return true;
+        }
     }
 }

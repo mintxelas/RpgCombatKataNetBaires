@@ -5,5 +5,6 @@ namespace Kata.Application
     public interface ICharacterService
     {
         Character CreateCharacter();
+        bool DamageCharacter(string id, int amount);
     }
 }

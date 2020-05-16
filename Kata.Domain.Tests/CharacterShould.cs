@@ -28,5 +28,25 @@ namespace Kata.Domain.Tests
         {
             Assert.True(character.IsALive());
         }
+
+        [Theory]
+        [InlineData(0, false)]
+        [InlineData(10, true)]
+        public void BeDeadOrAliveDependingOnItsHealth(int health, bool isAlive)
+        {
+            var c = new Character("123", health, 1);
+            Assert.Equal(isAlive, c.IsALive());
+        }
+
+        [Theory]
+        [InlineData(100, 100, 0)]
+        [InlineData(100, 200, 0)]
+        [InlineData(200, 100, 100)]
+        public void ReduceHealthWhenDamagedWithAMinumumOfZero(int startinghealth, int receivedDamage, int finalHealth)
+        {
+            var c = new Character("123", startinghealth, 1);
+            c.Damage(receivedDamage);
+            Assert.Equal(finalHealth, c.Health);
+        }
     }
 }
